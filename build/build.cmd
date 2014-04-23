@@ -1,0 +1,23 @@
+### this file is a sample taken from mongo-c-driver-legacy-build. must be adapted to new driver ####
+
+
+@SET FrameworkDir=C:\Windows\Microsoft.NET\Framework64\
+@SET FrameworkVersion=v4.0.30319
+@SET FrameworkSDKDir=
+
+@ECHO Setting environment for using Visual Studio
+
+@SET PATH=%FrameworkDir%%FrameworkVersion%;%FrameworkSDKDir%;%PATH%
+
+msbuild ..\MongoC.sln "/p:Platform=Win32;Configuration=Debug"
+IF ERRORLEVEl 1 EXIT
+
+msbuild ..\MongoC.sln "/p:Platform=Win32;Configuration=Release"
+IF ERRORLEVEl 1 EXIT
+
+msbuild ..\MongoC.sln "/p:Platform=x64;Configuration=Debug"
+IF ERRORLEVEl 1 EXIT
+
+msbuild ..\MongoC.sln "/p:Platform=x64;Configuration=Release"
+IF ERRORLEVEl 1 EXIT
+
