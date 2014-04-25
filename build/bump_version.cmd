@@ -1,6 +1,3 @@
-### this file is a sample taken from mongo-c-driver-legacy-build. must be adapted to new driver ####
-
-
 @echo off
 if %%1 == "" (
   goto :help
@@ -21,9 +18,8 @@ if %%6 == "" (
   goto :help
 )
 
-powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\src\mongoc.vcxproj) -replace '%1-%2-%3', '%4-%5-%6' | Set-Content ..\__submodules\mongo-c-driver\src\mongoc.vcxproj}"
-powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\src\mongoc.rc) -replace '%1,%2,%3,', '%4,%5,%6,' | Set-Content ..\__submodules\mongo-c-driver\src\mongoc.rc}"
-powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\src\mongoc.rc) -replace '%1.%2.%3.', '%4.%5.%6.' | Set-Content ..\__submodules\mongo-c-driver\src\mongoc.rc}"
+powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\mongoc_static.vcxproj) -replace '%1.%2.%3', '%4.%5.%6' | Set-Content ..\__submodules\mongo-c-driver\mongoc_static.vcxproj}"
+powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\mongoc_shared.vcxproj) -replace '%1.%2.%3,', '%4.%5.%6,' | Set-Content ..\__submodules\mongo-c-driver\mongoc_shared.vcxproj}"
 powershell -Command "& {(Get-Content sign.cmd) -replace '%1.%2.%3.', '%4.%5.%6.' | Set-Content sign.cmd}"
 
 goto :end
