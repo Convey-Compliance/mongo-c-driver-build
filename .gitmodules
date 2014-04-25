@@ -1,7 +1,6 @@
 [submodule "__submodules/mongo-c-driver"]
 	path = __submodules/mongo-c-driver
 	url = git@github.com:Convey-Compliance/mongo-c-driver.git
-
 [submodule "__submodules/libbson"]
 	path = __submodules/libbson
 	url = git@github.com:Convey-Compliance/libbson.git
