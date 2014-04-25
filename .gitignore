@@ -30,3 +30,4 @@ bin/*
 *.sdf
 *.suo
 *.opensdf
+*.vcxproj.user
