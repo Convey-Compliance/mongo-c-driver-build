@@ -5,3 +5,9 @@
 [submodule "__submodules/libbson"]
 	path = __submodules/libbson
 	url = git@github.com:Convey-Compliance/libbson.git
+[submodule "__submodules/libbson-build-headers"]
+	path = __submodules/libbson-build-headers
+	url = git@github.com:Convey-Compliance/libbson-build-headers.git
+[submodule "__submodules/mongo-c-driver-build-headers"]
+	path = __submodules/mongo-c-driver-build-headers
+	url = git@github.com:Convey-Compliance/mongo-c-driver-build-headers.git
