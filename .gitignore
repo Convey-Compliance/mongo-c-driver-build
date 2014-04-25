@@ -31,3 +31,6 @@ bin/*
 *.suo
 *.opensdf
 *.vcxproj.user
+/bin/
+/intermediate/
+/ipch/
