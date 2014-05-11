@@ -102,7 +102,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
-      <ModuleDefinitionFile>libmongoc_and_libbson.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>__submodules\mongo-c-driver-build-headers\libmongoc_and_libbson.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>
       </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -136,7 +136,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
-      <ModuleDefinitionFile>libmongoc_and_libbson.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>__submodules\mongo-c-driver-build-headers\libmongoc_and_libbson.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>
       </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -171,7 +171,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
-      <ModuleDefinitionFile>libmongoc_and_libbson.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>__submodules\mongo-c-driver-build-headers\libmongoc_and_libbson.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>
       </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -205,7 +205,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
-      <ModuleDefinitionFile>libmongoc_and_libbson.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>__submodules\mongo-c-driver-build-headers\libmongoc_and_libbson.def</ModuleDefinitionFile>
       <ProgramDataBaseFile>
       </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
