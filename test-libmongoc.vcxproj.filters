@@ -1,75 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="tests\ha-test.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-libmongoc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-array.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-buffer.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-client.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\mock-server.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-bulk.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-client-pool.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-collection.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-cursor.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-database.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-gridfs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-gridfs-file-page.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-list.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-matcher.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-queue.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-read-prefs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-rpc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-stream.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-uri.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-mongoc-write-concern.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\test-write-commands.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tests\TestSuite.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-concern.c">
       <Filter>Source Files\libmongoc</Filter>
     </ClCompile>
@@ -253,6 +184,29 @@
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_version.c">
       <Filter>Source Files\libmongoc\libbson\yajl</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-array.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-buffer.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock-server.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-bulk.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-file-page.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-list.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-matcher.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-queue.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-read-prefs.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-rpc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-uri.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-write-concern.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-write-commands.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\TestSuite.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
