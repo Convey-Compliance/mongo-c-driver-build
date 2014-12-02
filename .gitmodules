@@ -10,3 +10,6 @@
 [submodule "__submodules/mongo-c-driver-build-headers"]
 	path = __submodules/mongo-c-driver-build-headers
 	url = git@github.com:Convey-Compliance/mongo-c-driver-build-headers.git
+[submodule "__submodules/zlib"]
+	path = __submodules/zlib
+	url = git@github.com:Convey-Compliance/zlib.git
