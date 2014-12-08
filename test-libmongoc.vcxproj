@@ -85,7 +85,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -121,7 +121,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -157,7 +157,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -193,7 +193,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -228,6 +228,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-cnv-gridfs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-array.c" />
@@ -236,6 +237,7 @@
     <ClCompile Include="__submodules\mongo-c-driver\tests\mock-server.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-bulk.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cnv-stream.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c" />
@@ -312,6 +314,21 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-command.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-concern.c" />
+    <ClCompile Include="__submodules\zlib\adler32.c" />
+    <ClCompile Include="__submodules\zlib\compress.c" />
+    <ClCompile Include="__submodules\zlib\crc32.c" />
+    <ClCompile Include="__submodules\zlib\deflate.c" />
+    <ClCompile Include="__submodules\zlib\gzclose.c" />
+    <ClCompile Include="__submodules\zlib\gzlib.c" />
+    <ClCompile Include="__submodules\zlib\gzread.c" />
+    <ClCompile Include="__submodules\zlib\gzwrite.c" />
+    <ClCompile Include="__submodules\zlib\infback.c" />
+    <ClCompile Include="__submodules\zlib\inffast.c" />
+    <ClCompile Include="__submodules\zlib\inflate.c" />
+    <ClCompile Include="__submodules\zlib\inftrees.c" />
+    <ClCompile Include="__submodules\zlib\trees.c" />
+    <ClCompile Include="__submodules\zlib\uncompr.c" />
+    <ClCompile Include="__submodules\zlib\zutil.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
