@@ -207,12 +207,6 @@
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-write-concern.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-write-commands.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\TestSuite.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cnv-stream.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-cnv-gridfs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\zlib\adler32.c">
       <Filter>Source Files\zlib</Filter>
     </ClCompile>
@@ -257,6 +251,12 @@
     </ClCompile>
     <ClCompile Include="__submodules\zlib\zutil.c">
       <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-cnv-file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
