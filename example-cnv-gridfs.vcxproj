@@ -190,6 +190,7 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-cursorid.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c" />
@@ -205,7 +206,6 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-cnv-gridfs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-gridfs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c" />
@@ -229,6 +229,9 @@
     <ClCompile Include="__submodules\zlib\trees.c" />
     <ClCompile Include="__submodules\zlib\uncompr.c" />
     <ClCompile Include="__submodules\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
