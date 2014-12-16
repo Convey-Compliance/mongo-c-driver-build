@@ -25,11 +25,14 @@
     <Filter Include="Source Files\zlib">
       <UniqueIdentifier>{ef926394-4548-4dcf-9023-75fba3d05609}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\eax">
-      <UniqueIdentifier>{328f8280-39fb-4b12-b5c4-f7f58a82c3fc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\libscrypt">
       <UniqueIdentifier>{2ba95303-d554-4f9b-b9c3-cd98632f46c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\eax">
+      <UniqueIdentifier>{4462c2b1-d1fe-4399-8417-a5fe7516e634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\eax">
+      <UniqueIdentifier>{76af48dc-b27c-43c6-bcbf-68c7a71bfc98}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -267,18 +270,6 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\AES\aescrypt.c">
-      <Filter>Source Files\eax</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\AES\aeskey.c">
-      <Filter>Source Files\eax</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\AES\aestab.c">
-      <Filter>Source Files\eax</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\modes\eax.c">
-      <Filter>Source Files\eax</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c">
       <Filter>Source Files\libscrypt</Filter>
     </ClCompile>
@@ -288,10 +279,49 @@
     <ClCompile Include="__submodules\libscrypt\sha256.c">
       <Filter>Source Files\libscrypt</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\AES\aescrypt.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aeskey.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aestab.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aes_modes.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aes_ni.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\modes\eax.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\aes.h">
+      <Filter>Header Files\eax</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\aes_ni.h">
+      <Filter>Header Files\eax</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\aes_via_ace.h">
+      <Filter>Header Files\eax</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\aesopt.h">
+      <Filter>Header Files\eax</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\aestab.h">
+      <Filter>Header Files\eax</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\brg_endian.h">
+      <Filter>Header Files\eax</Filter>
+    </ClInclude>
+    <ClInclude Include="__submodules\AES\brg_types.h">
+      <Filter>Header Files\eax</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -235,6 +235,8 @@
     <ClCompile Include="__submodules\AES\aescrypt.c" />
     <ClCompile Include="__submodules\AES\aeskey.c" />
     <ClCompile Include="__submodules\AES\aestab.c" />
+    <ClCompile Include="__submodules\AES\aes_modes.c" />
+    <ClCompile Include="__submodules\AES\aes_ni.c" />
     <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c" />
     <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
     <ClCompile Include="__submodules\libscrypt\sha256.c" />
@@ -340,6 +342,15 @@
     <ClCompile Include="__submodules\zlib\trees.c" />
     <ClCompile Include="__submodules\zlib\uncompr.c" />
     <ClCompile Include="__submodules\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__submodules\AES\aes.h" />
+    <ClInclude Include="__submodules\AES\aesopt.h" />
+    <ClInclude Include="__submodules\AES\aestab.h" />
+    <ClInclude Include="__submodules\AES\aes_ni.h" />
+    <ClInclude Include="__submodules\AES\aes_via_ace.h" />
+    <ClInclude Include="__submodules\AES\brg_endian.h" />
+    <ClInclude Include="__submodules\AES\brg_types.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

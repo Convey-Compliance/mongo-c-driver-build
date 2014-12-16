@@ -158,6 +158,8 @@
     <ClCompile Include="__submodules\AES\aescrypt.c" />
     <ClCompile Include="__submodules\AES\aeskey.c" />
     <ClCompile Include="__submodules\AES\aestab.c" />
+    <ClCompile Include="__submodules\AES\aes_modes.c" />
+    <ClCompile Include="__submodules\AES\aes_ni.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bcon.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-clock.c" />
@@ -242,6 +244,13 @@
     <ClCompile Include="__submodules\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="__submodules\AES\aes.h" />
+    <ClInclude Include="__submodules\AES\aesopt.h" />
+    <ClInclude Include="__submodules\AES\aestab.h" />
+    <ClInclude Include="__submodules\AES\aes_ni.h" />
+    <ClInclude Include="__submodules\AES\aes_via_ace.h" />
+    <ClInclude Include="__submodules\AES\brg_endian.h" />
+    <ClInclude Include="__submodules\AES\brg_types.h" />
     <ClInclude Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
