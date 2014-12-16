@@ -6,14 +6,15 @@
 
 @SET PATH=%FrameworkDir%%FrameworkVersion%;%FrameworkSDKDir%;%PATH%
 
-msbuild ..\mongo-client.sln "/p:Platform=Win32;Configuration=Debug"
+msbuild ..\mongo-client.sln /p:Platform=Win32;Configuration=Debug;CustomDefs=DISABLE_CRASH_DIALOGS
 IF ERRORLEVEl 1 EXIT
 
-msbuild ..\mongo-client.sln "/p:Platform=Win32;Configuration=Release"
+msbuild ..\mongo-client.sln /p:Platform=Win32;Configuration=Release;CustomDefs=DISABLE_CRASH_DIALOGS
 IF ERRORLEVEl 1 EXIT
 
-msbuild ..\mongo-client.sln "/p:Platform=x64;Configuration=Debug"
+msbuild ..\mongo-client.sln /p:Platform=x64;Configuration=Debug;CustomDefs=DISABLE_CRASH_DIALOGS
 IF ERRORLEVEl 1 EXIT
 
-msbuild ..\mongo-client.sln "/p:Platform=x64;Configuration=Release"
+msbuild ..\mongo-client.sln /p:Platform=x64;Configuration=Release;CustomDefs=DISABLE_CRASH_DIALOGS
 IF ERRORLEVEl 1 EXIT
+
