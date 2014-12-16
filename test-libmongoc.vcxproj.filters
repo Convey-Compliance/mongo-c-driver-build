@@ -258,6 +258,27 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\AES\aescrypt.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aeskey.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aestab.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\modes\eax.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\sha256.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
@@ -274,6 +295,12 @@
     </Filter>
     <Filter Include="Source Files\zlib">
       <UniqueIdentifier>{ea04a520-989f-42ca-ad69-403c2f67a237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\eax">
+      <UniqueIdentifier>{dda83617-9520-4407-a0a0-481d25f48f0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libscrypt">
+      <UniqueIdentifier>{28e6be12-e017-4b9b-93d2-6cb29d7b98cb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -13,3 +13,12 @@
 [submodule "__submodules/zlib"]
 	path = __submodules/zlib
 	url = git@github.com:Convey-Compliance/zlib.git
+[submodule "__submodules/AES"]
+	path = __submodules/AES
+	url = git@github.com:Convey-Compliance/AES.git
+[submodule "__submodules/libscrypt"]
+	path = __submodules/libscrypt
+	url = git@github.com:Convey-Compliance/libscrypt.git
+[submodule "__submodules/modes"]
+	path = __submodules/modes
+	url = git@github.com:Convey-Compliance/modes.git

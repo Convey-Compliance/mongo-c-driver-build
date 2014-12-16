@@ -25,6 +25,12 @@
     <Filter Include="Source Files\zlib">
       <UniqueIdentifier>{ef926394-4548-4dcf-9023-75fba3d05609}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\eax">
+      <UniqueIdentifier>{328f8280-39fb-4b12-b5c4-f7f58a82c3fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libscrypt">
+      <UniqueIdentifier>{2ba95303-d554-4f9b-b9c3-cd98632f46c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c">
@@ -260,6 +266,27 @@
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aescrypt.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aeskey.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aestab.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\modes\eax.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\sha256.c">
+      <Filter>Source Files\libscrypt</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
