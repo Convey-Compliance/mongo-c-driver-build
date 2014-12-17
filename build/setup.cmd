@@ -1,1 +1,1 @@
-robocopy v:\user\MongoDB\v2.6.3c ..\MongoDB mongod.exe /ZB /X /TEE
+robocopy \\conveydev.com\files\dev\Repository\third-party-software-installers\mongo\v2.6.3c ..\MongoDB mongod.exe /ZB /X /TEE
