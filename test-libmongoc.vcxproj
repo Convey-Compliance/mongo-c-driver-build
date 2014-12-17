@@ -56,8 +56,8 @@
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test-libmongoc</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test-libmongoc</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
@@ -68,8 +68,8 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test-libmongoc</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test-libmongoc</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -85,7 +85,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -98,7 +98,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>$(CustomDefs);WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
@@ -122,7 +122,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -135,7 +135,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>$(CustomDefs);WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
@@ -159,7 +159,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -172,7 +172,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>$(CustomDefs);WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
@@ -196,7 +196,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -209,7 +209,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>$(CustomDefs);WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
@@ -232,6 +232,15 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="__submodules\AES\aescrypt.c" />
+    <ClCompile Include="__submodules\AES\aeskey.c" />
+    <ClCompile Include="__submodules\AES\aestab.c" />
+    <ClCompile Include="__submodules\AES\aes_modes.c" />
+    <ClCompile Include="__submodules\AES\aes_ni.c" />
+    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c" />
+    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
+    <ClCompile Include="__submodules\libscrypt\sha256.c" />
+    <ClCompile Include="__submodules\modes\eax.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c" />
@@ -333,6 +342,15 @@
     <ClCompile Include="__submodules\zlib\trees.c" />
     <ClCompile Include="__submodules\zlib\uncompr.c" />
     <ClCompile Include="__submodules\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__submodules\AES\aes.h" />
+    <ClInclude Include="__submodules\AES\aesopt.h" />
+    <ClInclude Include="__submodules\AES\aestab.h" />
+    <ClInclude Include="__submodules\AES\aes_ni.h" />
+    <ClInclude Include="__submodules\AES\aes_via_ace.h" />
+    <ClInclude Include="__submodules\AES\brg_endian.h" />
+    <ClInclude Include="__submodules\AES\brg_types.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
