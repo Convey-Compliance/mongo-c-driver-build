@@ -24,4 +24,5 @@ if ERRORLEVEL 1 (
 
 cd ..\..\..\build
 taskkill /F /T /IM mongod.exe 2>nul
+:: notice here we are always returning 0 to prevent the build to be broken and stop our test failures collector in Jenkins
 exit /b 0
