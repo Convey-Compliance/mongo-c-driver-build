@@ -24,4 +24,4 @@ if ERRORLEVEL 1 (
 
 cd ..\..\..\build
 taskkill /F /T /IM mongod.exe 2>nul
-exit /b %ret%
+exit /b 0
