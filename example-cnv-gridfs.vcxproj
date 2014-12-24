@@ -165,6 +165,7 @@
     <ClCompile Include="__submodules\libbson\src\bson\bson-clock.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-context.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-error.c" />
+    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-iter.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-json.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-keys.c" />
@@ -201,6 +202,7 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-counters.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-array.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-cursorid.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
