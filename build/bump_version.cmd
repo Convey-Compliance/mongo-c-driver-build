@@ -18,9 +18,9 @@ if %%6 == "" (
   goto :help
 )
 
-powershell -Command "& {(Get-Content ..\mongoc_static.vcxproj) -replace '%1.%2.%3', '%4.%5.%6' | Set-Content ..\mongoc_static.vcxproj}"
-powershell -Command "& {(Get-Content ..\mongoc_shared.vcxproj) -replace '%1.%2.%3', '%4.%5.%6' | Set-Content ..\mongoc_shared.vcxproj}"
-powershell -Command "& {(Get-Content sign.cmd) -replace '%1.%2.%3', '%4.%5.%6' | Set-Content sign.cmd}"
+powershell -Command "& {(Get-Content ..\mongoc_static.vcxproj) -replace '%1-%2-%3', '%4-%5-%6' | Set-Content ..\mongoc_static.vcxproj}"
+powershell -Command "& {(Get-Content ..\mongoc_shared.vcxproj) -replace '%1-%2-%3', '%4-%5-%6' | Set-Content ..\mongoc_shared.vcxproj}"
+powershell -Command "& {(Get-Content sign.cmd) -replace '%1-%2-%3', '%4-%5-%6' | Set-Content sign.cmd}"
 
 goto :end
 
