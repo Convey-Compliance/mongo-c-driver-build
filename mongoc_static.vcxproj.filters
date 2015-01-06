@@ -10,6 +10,15 @@
     <Filter Include="Source Files\libbson\yajl">
       <UniqueIdentifier>{68751976-fe41-406f-bb08-dc65a9bb81b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\zlib">
+      <UniqueIdentifier>{ed9541b8-7fad-4c58-912b-99c9d505403e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libscrypt">
+      <UniqueIdentifier>{51d30093-efad-4fb9-b30d-78bec6c379e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\eax">
+      <UniqueIdentifier>{ffe26698-ff6d-47a8-8566-70d6e570decc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c">
@@ -199,6 +208,81 @@
       <Filter>Source Files\libbson</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\adler32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\compress.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\crc32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\deflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\gzclose.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\gzlib.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\gzread.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\gzwrite.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\infback.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\inffast.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\inflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\inftrees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\trees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\uncompr.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\zlib\zutil.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libscrypt\sha256.c">
+      <Filter>Source Files\libscrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aescrypt.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aeskey.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aestab.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aes_modes.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\AES\aes_ni.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\modes\eax.c">
+      <Filter>Source Files\eax</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

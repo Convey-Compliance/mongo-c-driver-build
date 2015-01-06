@@ -81,7 +81,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -94,6 +94,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;mongoc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalOptions>
@@ -115,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -128,6 +129,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;mongoc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalOptions>
@@ -150,7 +152,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -163,6 +165,7 @@
       </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;mongoc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalOptions>
@@ -184,7 +187,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -197,6 +200,7 @@
       </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;mongoc_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalOptions>
@@ -217,6 +221,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="__submodules\AES\aescrypt.c" />
+    <ClCompile Include="__submodules\AES\aeskey.c" />
+    <ClCompile Include="__submodules\AES\aestab.c" />
+    <ClCompile Include="__submodules\AES\aes_modes.c" />
+    <ClCompile Include="__submodules\AES\aes_ni.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bcon.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-clock.c" />
@@ -244,6 +253,10 @@
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_parser.c" />
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_tree.c" />
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_version.c" />
+    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c" />
+    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
+    <ClCompile Include="__submodules\libscrypt\sha256.c" />
+    <ClCompile Include="__submodules\modes\eax.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c" />
@@ -257,6 +270,7 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c" />
@@ -280,6 +294,21 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-command.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-concern.c" />
+    <ClCompile Include="__submodules\zlib\adler32.c" />
+    <ClCompile Include="__submodules\zlib\compress.c" />
+    <ClCompile Include="__submodules\zlib\crc32.c" />
+    <ClCompile Include="__submodules\zlib\deflate.c" />
+    <ClCompile Include="__submodules\zlib\gzclose.c" />
+    <ClCompile Include="__submodules\zlib\gzlib.c" />
+    <ClCompile Include="__submodules\zlib\gzread.c" />
+    <ClCompile Include="__submodules\zlib\gzwrite.c" />
+    <ClCompile Include="__submodules\zlib\infback.c" />
+    <ClCompile Include="__submodules\zlib\inffast.c" />
+    <ClCompile Include="__submodules\zlib\inflate.c" />
+    <ClCompile Include="__submodules\zlib\inftrees.c" />
+    <ClCompile Include="__submodules\zlib\trees.c" />
+    <ClCompile Include="__submodules\zlib\uncompr.c" />
+    <ClCompile Include="__submodules\zlib\zutil.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
