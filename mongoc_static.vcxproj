@@ -181,6 +181,7 @@
     <ClCompile Include="__submodules\libscrypt\sha256.c" />
     <ClCompile Include="__submodules\modes\eax.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client-pool.c" />
