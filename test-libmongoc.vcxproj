@@ -136,6 +136,7 @@
     <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
     <ClCompile Include="__submodules\libscrypt\sha256.c" />
     <ClCompile Include="__submodules\modes\eax.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />

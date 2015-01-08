@@ -294,6 +294,9 @@
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-socket.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
+      <Filter>Source Files\libmongoc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

@@ -303,6 +303,9 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c">
       <Filter>Source Files\libmongoc</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
+      <Filter>Source Files\libmongoc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.h">

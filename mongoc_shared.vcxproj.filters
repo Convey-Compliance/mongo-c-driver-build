@@ -265,6 +265,9 @@
     <ClCompile Include="__submodules\modes\eax.c">
       <Filter>Source Files\eax</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

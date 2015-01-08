@@ -283,6 +283,7 @@
       <Filter>Source Files\eax</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
