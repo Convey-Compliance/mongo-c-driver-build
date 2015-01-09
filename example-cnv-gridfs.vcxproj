@@ -158,7 +158,6 @@
     <ClCompile Include="__submodules\AES\aescrypt.c" />
     <ClCompile Include="__submodules\AES\aeskey.c" />
     <ClCompile Include="__submodules\AES\aestab.c" />
-    <ClCompile Include="__submodules\AES\aes_modes.c" />
     <ClCompile Include="__submodules\AES\aes_ni.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bcon.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c" />
