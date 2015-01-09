@@ -2,26 +2,29 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{7d464e66-e8a7-467b-a30b-6ddacea7c2b5}</UniqueIdentifier>
+      <UniqueIdentifier>{005c4314-2ee9-492c-b046-88335e69d77a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\libbson">
-      <UniqueIdentifier>{79dc7734-1c7e-4190-8f5b-e2fd6387ecb4}</UniqueIdentifier>
+      <UniqueIdentifier>{6bdaeb88-95e1-4970-94dd-bdb2afec43a7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\libbson\yajl">
-      <UniqueIdentifier>{68751976-fe41-406f-bb08-dc65a9bb81b9}</UniqueIdentifier>
+      <UniqueIdentifier>{879261a7-94fc-419b-a62e-c3b2b013f26a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\zlib">
-      <UniqueIdentifier>{ed9541b8-7fad-4c58-912b-99c9d505403e}</UniqueIdentifier>
+      <UniqueIdentifier>{71b107a8-29ff-45a5-b6cc-d99afab82ccf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\libscrypt">
-      <UniqueIdentifier>{51d30093-efad-4fb9-b30d-78bec6c379e5}</UniqueIdentifier>
+      <UniqueIdentifier>{8c137d06-02c8-47a0-b393-446550b29ad9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\eax">
-      <UniqueIdentifier>{ffe26698-ff6d-47a8-8566-70d6e570decc}</UniqueIdentifier>
+      <UniqueIdentifier>{a4dbde90-52c9-4fea-af80-6a38c3bd8b03}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c">
@@ -30,10 +33,10 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client.c">
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client-pool.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client-pool.c">
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cluster.c">
@@ -45,28 +48,34 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-counters.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-array.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-cursorid.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c">
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-index.c">
@@ -81,10 +90,10 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-log.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c">
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c">
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c">
@@ -99,9 +108,6 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -112,6 +118,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-uri.c">
@@ -129,9 +138,6 @@
     <ClCompile Include="__submodules\libbson\src\bson\bcon.c">
       <Filter>Source Files\libbson</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson.c">
-      <Filter>Source Files\libbson</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c">
       <Filter>Source Files\libbson</Filter>
     </ClCompile>
@@ -142,6 +148,9 @@
       <Filter>Source Files\libbson</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\libbson\src\bson\bson-error.c">
+      <Filter>Source Files\libbson</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c">
       <Filter>Source Files\libbson</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\libbson\src\bson\bson-iter.c">
@@ -177,6 +186,9 @@
     <ClCompile Include="__submodules\libbson\src\bson\bson-writer.c">
       <Filter>Source Files\libbson</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\libbson\src\bson\bson.c">
+      <Filter>Source Files\libbson</Filter>
+    </ClCompile>
     <ClCompile Include="__submodules\libbson\src\yajl\yajl.c">
       <Filter>Source Files\libbson\yajl</Filter>
     </ClCompile>
@@ -203,12 +215,6 @@
     </ClCompile>
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_version.c">
       <Filter>Source Files\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c">
-      <Filter>Source Files\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\zlib\adler32.c">
       <Filter>Source Files\zlib</Filter>
@@ -281,10 +287,6 @@
     </ClCompile>
     <ClCompile Include="__submodules\modes\eax.c">
       <Filter>Source Files\eax</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
-      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
