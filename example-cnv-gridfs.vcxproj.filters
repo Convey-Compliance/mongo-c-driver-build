@@ -288,9 +288,6 @@
     <ClCompile Include="__submodules\AES\aestab.c">
       <Filter>Source Files\eax</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\AES\aes_modes.c">
-      <Filter>Source Files\eax</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\AES\aes_ni.c">
       <Filter>Source Files\eax</Filter>
     </ClCompile>
