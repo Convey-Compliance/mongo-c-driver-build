@@ -53,7 +53,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -73,7 +73,7 @@
     <Link>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;shlwapi.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;libeay32.lib;ssleay32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>
@@ -90,7 +90,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>
       </AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -110,7 +110,7 @@
     <Link>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;shlwapi.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;libeay32.lib;ssleay32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>
@@ -130,44 +130,12 @@
     <ClCompile Include="__submodules\AES\aeskey.c" />
     <ClCompile Include="__submodules\AES\aestab.c" />
     <ClCompile Include="__submodules\AES\aes_ni.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c" />
-    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c" />
-    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
-    <ClCompile Include="__submodules\libscrypt\sha256.c" />
-    <ClCompile Include="__submodules\modes\eax.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-array.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-buffer.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\mock-server.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-bulk.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-cnv-file.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-file-page.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-list.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-matcher.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-queue.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-read-prefs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-rpc.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-socket.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-uri.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-write-concern.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-write-commands.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\TestSuite.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bcon.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-clock.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-context.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-error.c" />
+    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-iter.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-json.c" />
     <ClCompile Include="__submodules\libbson\src\bson\bson-keys.c" />
@@ -189,7 +157,12 @@
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_parser.c" />
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_tree.c" />
     <ClCompile Include="__submodules\libbson\src\yajl\yajl_version.c" />
+    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c" />
+    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
+    <ClCompile Include="__submodules\libscrypt\sha256.c" />
+    <ClCompile Include="__submodules\modes\eax.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client-pool.c" />
@@ -199,8 +172,10 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-counters.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-array.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-cursorid.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c" />
@@ -212,18 +187,51 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rand.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-prefs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-scram.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-ssl.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-gridfs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-tls.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-uri.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-command.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-concern.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mongoc-tests.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\ssl-test.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-array.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-buffer.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock-server.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-bulk.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-cnv-file.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-file-page.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-list.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-matcher.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-queue.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-read-prefs.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-rpc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream-tls.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-uri.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-write-concern.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-write-commands.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-x509.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\TestSuite.c" />
     <ClCompile Include="__submodules\zlib\adler32.c" />
     <ClCompile Include="__submodules\zlib\compress.c" />
     <ClCompile Include="__submodules\zlib\crc32.c" />
