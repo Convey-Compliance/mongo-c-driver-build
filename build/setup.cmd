@@ -1,4 +1,5 @@
-robocopy \\conveydev.com\files\dev\Repository\third-party-software-installers\mongo\v2.6.3c ..\MongoDB mongod.exe /ZB /X /TEE
+robocopy %1\user\MongoDB\v3.1.2c ..\MongoDB mongod.exe /ZB /X /TEE
+robocopy \\conveydev.com\files\repository\third-party-software-installers\Mongo\mongo-c-driver-ssl ..\__submodules\mongo-c-driver\tests /E /X /TEE
 
 robocopy %1\user\openssl\Win32\Debug\lib ..\bin\Win32\Debug /E /X /TEE
 robocopy %1\user\openssl\Win32\Release\lib ..\bin\Win32\Release /E /X /TEE
