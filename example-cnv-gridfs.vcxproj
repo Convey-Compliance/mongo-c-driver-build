@@ -66,21 +66,25 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -89,13 +93,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -105,13 +109,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,7 +127,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -131,7 +135,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -143,7 +147,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -151,7 +155,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -217,13 +221,17 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rand.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-prefs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-scram.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-ssl.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-gridfs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-tls.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-uri.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c" />

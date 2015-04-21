@@ -163,7 +163,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -181,7 +181,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -199,7 +199,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -217,7 +217,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
