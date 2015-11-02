@@ -1,7 +1,7 @@
 cd ..\mongodb
 rd mongodata 2>nul
 md mongodata
-start mongod.exe --dbpath mongodata
+start mongod.exe --dbpath mongodata --smallfiles
 ping 1.1.1.111 -n 1 -w 2000 > nul
 
 :: we run only debug tests cause release not working properly(appcrash)
