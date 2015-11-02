@@ -280,6 +280,39 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-tls.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-async.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-async-cmd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-host-list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-memcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-opcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-server-description.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-server-stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-description.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-scanner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
@@ -300,5 +333,10 @@
     <Filter Include="Source Files\eax">
       <UniqueIdentifier>{8485472a-4888-43e1-b9ab-39e8d705b4f1}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="__submodules\mongo-c-driver\src\mongoc\uncrustify.cfg">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
