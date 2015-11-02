@@ -111,7 +111,7 @@
     <Link>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mongo-client-static.lib;ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
@@ -146,7 +146,7 @@
     <Link>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mongo-client-static.lib;ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
@@ -182,7 +182,7 @@
     <Link>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mongo-client-static.lib;ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
@@ -217,7 +217,7 @@
     <Link>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mongo-client-static.lib;ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/$(TargetName).lib</ImportLibrary>
@@ -232,115 +232,6 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="__submodules\AES\aescrypt.c" />
-    <ClCompile Include="__submodules\AES\aeskey.c" />
-    <ClCompile Include="__submodules\AES\aestab.c" />
-    <ClCompile Include="__submodules\AES\aes_ni.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bcon.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-clock.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-context.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-error.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-iter.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-json.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-keys.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-md5.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-memory.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-oid.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-reader.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-string.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-utf8.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-value.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson-writer.c" />
-    <ClCompile Include="__submodules\libbson\src\bson\bson.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_alloc.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_buf.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_encode.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_gen.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_lex.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_parser.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_tree.c" />
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_version.c" />
-    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c" />
-    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c" />
-    <ClCompile Include="__submodules\libscrypt\sha256.c" />
-    <ClCompile Include="__submodules\modes\eax.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-async-cmd.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-async.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client-pool.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cluster.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-collection.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-counters.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-array.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-cursorid.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-host-list.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-index.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-init.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-list.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-log.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-memcmp.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-opcode.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rand.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-prefs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-sasl.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-scram.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-server-description.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-server-stream.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-set.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-ssl.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-file.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-gridfs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-tls.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-description.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-scanner.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-uri.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-command.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-concern.c" />
-    <ClCompile Include="__submodules\zlib\adler32.c" />
-    <ClCompile Include="__submodules\zlib\compress.c" />
-    <ClCompile Include="__submodules\zlib\crc32.c" />
-    <ClCompile Include="__submodules\zlib\deflate.c" />
-    <ClCompile Include="__submodules\zlib\gzclose.c" />
-    <ClCompile Include="__submodules\zlib\gzlib.c" />
-    <ClCompile Include="__submodules\zlib\gzread.c" />
-    <ClCompile Include="__submodules\zlib\gzwrite.c" />
-    <ClCompile Include="__submodules\zlib\infback.c" />
-    <ClCompile Include="__submodules\zlib\inffast.c" />
-    <ClCompile Include="__submodules\zlib\inflate.c" />
-    <ClCompile Include="__submodules\zlib\inftrees.c" />
-    <ClCompile Include="__submodules\zlib\trees.c" />
-    <ClCompile Include="__submodules\zlib\uncompr.c" />
-    <ClCompile Include="__submodules\zlib\zutil.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="__submodules\mongo-c-driver\src\mongoc\uncrustify.cfg" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

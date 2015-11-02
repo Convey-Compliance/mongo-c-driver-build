@@ -1,12 +1,21 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mongoc_shared", "mongoc_shared.vcxproj", "{93D8C082-3A08-4B23-A53C-97A79125D4BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C6521A1-DE42-48B9-991D-E3C412026C49} = {6C6521A1-DE42-48B9-991D-E3C412026C49}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mongoc_static", "mongoc_static.vcxproj", "{6C6521A1-DE42-48B9-991D-E3C412026C49}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-libmongoc", "test-libmongoc.vcxproj", "{5BE8A249-F97A-47A5-BDEF-741E34FA697B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C6521A1-DE42-48B9-991D-E3C412026C49} = {6C6521A1-DE42-48B9-991D-E3C412026C49}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example-cnv-gridfs", "example-cnv-gridfs.vcxproj", "{95391B7F-F59D-4B7B-84A7-B7D24D3A0033}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C6521A1-DE42-48B9-991D-E3C412026C49} = {6C6521A1-DE42-48B9-991D-E3C412026C49}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
