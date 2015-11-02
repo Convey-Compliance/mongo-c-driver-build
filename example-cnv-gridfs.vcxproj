@@ -95,6 +95,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -111,6 +112,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +131,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,6 +152,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BSON_COMPILATION;MONGOC_COMPILATION;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include\$(Platform)\$(Configuration);__submodules\libscrypt;__submodules\modes;__submodules\aes;__submodules\zlib;__submodules\mongo-c-driver\src\mongoc;__submodules\libbson\src\bson;__submodules\libbson\src;__submodules\mongo-c-driver-build-headers;__submodules\libbson-build-headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
