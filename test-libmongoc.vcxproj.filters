@@ -1,328 +1,166 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-array.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-buffer.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\mock-server.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-bulk.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-file-page.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-list.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-matcher.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-queue.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-read-prefs.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-rpc.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-uri.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-write-concern.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-write-commands.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\TestSuite.c" />
-    <ClCompile Include="__submodules\zlib\adler32.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\compress.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\crc32.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\deflate.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\gzclose.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\gzlib.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\gzread.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\gzwrite.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\infback.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\inffast.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\inflate.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\inftrees.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\trees.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\uncompr.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\zlib\zutil.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\AES\aescrypt.c">
-      <Filter>Source Files\eax</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\debug-stream.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\AES\aeskey.c">
-      <Filter>Source Files\eax</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\ha-test.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\AES\aestab.c">
-      <Filter>Source Files\eax</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\json-test.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\modes\eax.c">
-      <Filter>Source Files\eax</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mongoc-tests.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\libscrypt\crypto_scrypt-nosse.c">
-      <Filter>Source Files\libscrypt</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\ssl-test.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\libscrypt\crypto-scrypt-saltgen.c">
-      <Filter>Source Files\libscrypt</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-bulk.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\libscrypt\sha256.c">
-      <Filter>Source Files\libscrypt</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-conveniences.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\AES\aes_ni.c">
-      <Filter>Source Files\eax</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-libmongoc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-async.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cluster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-exhaust.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-file-page.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-matcher.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-read-prefs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-rpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-server-selection-errors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-set.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-socket.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream-tls.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream-tls-error.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-thread.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client-pool.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-topology.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-client.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-topology-reconcile.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cluster.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-topology-scanner.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-collection.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-uri.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-counters.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-usleep.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-array.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-write-concern.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-cursorid.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-sasl.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\TestSuite.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-write-commands.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-x509.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\future.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\future-functions.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\future-value.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\mock-rs.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-index.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\mock-server.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-init.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\request.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-list.c">
-      <Filter>Source Files\libmongoc</Filter>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\sync-queue.c">
+      <Filter>Source Files\mock server</Filter>
     </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-log.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rand.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-prefs.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-scram.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-ssl.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-file.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-gridfs.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-tls.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-uri.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-command.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-concern.c">
-      <Filter>Source Files\libmongoc</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-iso8601.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bcon.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-atomic.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-clock.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-context.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-error.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-iter.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-json.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-keys.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-md5.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-memory.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-oid.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-reader.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-string.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-utf8.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-value.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson-writer.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\bson\bson.c">
-      <Filter>Source Files\libmongoc\libbson</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_alloc.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_buf.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_encode.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_gen.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_lex.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_parser.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_tree.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\libbson\src\yajl\yajl_version.c">
-      <Filter>Source Files\libmongoc\libbson\yajl</Filter>
-    </ClCompile>
-    <ClCompile Include="__submodules\mongo-c-driver\tests\mongoc-tests.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\ssl-test.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-stream-tls.c" />
-    <ClCompile Include="__submodules\mongo-c-driver\tests\test-x509.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{7B8908A5-1D5A-4E49-9D21-C6FC0FEC6C28}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\zlib">
-      <UniqueIdentifier>{ea04a520-989f-42ca-ad69-403c2f67a237}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\eax">
-      <UniqueIdentifier>{dda83617-9520-4407-a0a0-481d25f48f0e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\libscrypt">
-      <UniqueIdentifier>{28e6be12-e017-4b9b-93d2-6cb29d7b98cb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{8933ed73-9512-4972-8a13-8a0e826c5944}</UniqueIdentifier>
@@ -330,14 +168,8 @@
     <Filter Include="Header Files\eax">
       <UniqueIdentifier>{31b9e181-dfb3-45f2-8454-f2d8679d4f3a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\libmongoc">
-      <UniqueIdentifier>{cb4464bb-226d-409b-9d20-beee8c17753e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\libmongoc\libbson">
-      <UniqueIdentifier>{7edf268e-eb60-43f3-8ecc-cfcadf679287}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\libmongoc\libbson\yajl">
-      <UniqueIdentifier>{78e16521-247d-48c2-9cd0-2218492150cb}</UniqueIdentifier>
+    <Filter Include="Source Files\mock server">
+      <UniqueIdentifier>{95b6b3cc-d95c-4f08-aac3-1bec3390359f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

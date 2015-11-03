@@ -55,6 +55,8 @@
     <ClCompile Include="__submodules\libscrypt\sha256.c" />
     <ClCompile Include="__submodules\modes\eax.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-array.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-async-cmd.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-async.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-b64.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-buffer.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-bulk-operation.c" />
@@ -73,21 +75,35 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-host-list.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-index.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-init.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-list.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-log.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher-op.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-matcher.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-memcmp.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-opcode.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rand.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-prefs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-sasl.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-scram.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-server-description.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-server-stream.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-set.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-ssl.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-buffered.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-gridfs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-socket.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream-tls.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-stream.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-description.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-scanner.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-uri.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-util.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-write-command.c" />
@@ -148,16 +164,16 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mongo-client_d64_v1-1-5</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mongo-client_d32_v1-1-5</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mongo-client-static</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mongo-client-static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mongo-client_r64_v1-1-5</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mongo-client_r32_v1-1-5</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mongo-client-static</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mongo-client-static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
   </PropertyGroup>
@@ -176,7 +192,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4244;4018;4090;4996;4047;4267</DisableSpecificWarnings>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -194,7 +210,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4244;4018;4090;4996;4047;4267</DisableSpecificWarnings>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -212,7 +228,7 @@
       </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4244;4018;4090;4996;4047;4267</DisableSpecificWarnings>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -230,7 +246,7 @@
       </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BSON_COMPILATION;MONGOC_COMPILATION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4244;4018;4090;4996;4047;4267</DisableSpecificWarnings>
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
