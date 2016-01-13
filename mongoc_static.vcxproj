@@ -70,6 +70,7 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor-transform.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-database.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-find-and-modify.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-list.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-gridfs-file-page.c" />
@@ -86,6 +87,7 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-opcode.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-queue.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rand.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-concern.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-prefs.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-rpc.c" />
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-sasl.c" />

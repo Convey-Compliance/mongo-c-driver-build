@@ -148,10 +148,12 @@
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client-pool.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-client.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cluster.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection-find.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-cursor.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-database.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-exhaust.c" />
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-find-and-modify.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-cnv-file.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs-file-page.c" />
     <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-gridfs.c" />
