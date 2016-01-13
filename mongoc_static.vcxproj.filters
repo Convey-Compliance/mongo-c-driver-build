@@ -333,5 +333,11 @@
     <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-topology-scanner.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-find-and-modify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\src\mongoc\mongoc-read-concern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

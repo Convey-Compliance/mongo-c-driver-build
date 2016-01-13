@@ -157,6 +157,10 @@
     <ClCompile Include="__submodules\mongo-c-driver\tests\mock_server\sync-queue.c">
       <Filter>Source Files\mock server</Filter>
     </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-find-and-modify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__submodules\mongo-c-driver\tests\test-mongoc-collection-find.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
