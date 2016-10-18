@@ -5,4 +5,9 @@
       <UniqueIdentifier>{7B8908A5-1D5A-4E49-9D21-C6FC0FEC6C28}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
