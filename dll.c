@@ -1,0 +1,1 @@
+// just a stub VS don't create dll file(win32 release) if there are no src files
